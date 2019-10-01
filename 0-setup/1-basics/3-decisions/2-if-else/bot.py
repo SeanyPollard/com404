@@ -1,5 +1,5 @@
 # ask user for activity input
-act_type = input("Please enter the activity to be completed.")
+act_type = input("Please enter the activity to be completed.\n")
 
 # check activity input and respond accordingly
 if act_type == "Calculate":
