@@ -2,7 +2,7 @@
 book_type = input("Which genre of book is this?")
 
 # if adventure then repond
-if book_type == "adventure":
+if book_type == "Adventure":
     print("Yay! Adventures are my favourite")
 
 # declare beep has finished reading
