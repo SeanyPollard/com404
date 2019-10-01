@@ -13,3 +13,7 @@ COM404 - Problem Solving through Programming
 >= greater than or equal to
 >= less than or equal to
 
+if thing is thing:
+elif thing is thing:
+else:
+
