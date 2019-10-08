@@ -11,7 +11,11 @@ COM404 - Problem Solving through Programming
 < less than
 != not equal to
 >= greater than or equal to
->= less than or equal to
+<>= less than or equal to
++= can be used instead of x = x + a as x += a
+-= as above
+*= as above
+/= as above
 
 if thing is thing:
 elif thing is thing:
