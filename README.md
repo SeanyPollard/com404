@@ -21,3 +21,10 @@ if thing is thing:
 elif thing is thing:
 else:
 
+while this is thing:
+
+for thing in thing:
+for thing in range(start,end,step)
+
+
+
