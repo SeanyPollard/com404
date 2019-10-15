@@ -24,7 +24,7 @@ else:
 while this is thing:
 
 for thing in thing:
-for thing in range(start,end,step)
+for thing in range(start,end,step):
 
-
+def name_of_function:
 
