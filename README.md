@@ -36,8 +36,15 @@ class Thing:
     def do_stuff(self):
         method code here ohhhhh baby
 
+    def __str__(self):
+        return "The string with the stuff {}".format(self.stuff)
+
 now we know what, let's use it (Y)
 you = Thing("stuff")                making an object from the class and passing attributes MY GOD
 you.do_stuff()                      now I'm calling the object's method from it's class WOW
+"I am talking about {} and it's great".format(you.stuff) to call attribute in string
 
-
+when defining attributes
+self.stuff      public to all
+self._stuff     protected, not accessed directly but accessible by children classes
+self.__stuff    private, not accessed outside the class even through inheritance
