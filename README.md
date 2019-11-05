@@ -28,3 +28,16 @@ for thing in range(start,end,step):
 
 def name_of_function:
 
+objects are cooooool maaaaaan
+class Thing:
+    def __init__(self):             contruct that bad boi
+        self.stuff = ""             ooo yeah attribute me up
+
+    def do_stuff(self):
+        method code here ohhhhh baby
+
+now we know what, let's use it (Y)
+you = Thing("stuff")                making an object from the class and passing attributes MY GOD
+you.do_stuff()                      now I'm calling the object's method from it's class WOW
+
+
