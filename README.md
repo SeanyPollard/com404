@@ -48,3 +48,13 @@ when defining attributes
 self.stuff      public to all
 self._stuff     protected, not accessed directly but accessible by children classes
 self.__stuff    private, not accessed outside the class even through inheritance
+
+Using GUIs
+from tkinter import *       AKA bring in all the GUId stuff
+
+Then bring in the class for a blank window
+class Gui(Tk):
+    def __init__(self):
+        super().__init__()
+
+        
