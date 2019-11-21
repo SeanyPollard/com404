@@ -1,9 +1,12 @@
 # com404
 COM404 - Problem Solving through Programming
 
+print()
+\ breakout character to do something outside the string, need to \\ to display \
 \n in string for print creates new line - tidier for input!
-
 """ multiline string
+can use end= as keyword in print and change what end is (default /n)
+sep= can change seperator when passing multiple arguments (default " ")
 
 = assign
 == equal to
@@ -57,4 +60,14 @@ class Gui(Tk):
     def __init__(self):
         super().__init__()
 
-        
+number representations:
+int - 123
+octal (0-7 only) - 0o123 = 83
+hex (0-F) - 0x123 = 291
+float - 1.23
+exponent - 1.23e4 = 12300
+neg exponent - 1.23e-3 = 0.00123
+power of - 2**3 = 2*2*2 = 8
+integer(floor) division - 6//2 = 3     Normal division always produces float (6/2 = 3.0) so use this is int is needed. Always rounds down to nearest int too so 6.0//4 = 1.0 not 1.5 and -6//4 = -2
+
+float > int - Using a float in a calculation will output a float, even if ints are used too. 
