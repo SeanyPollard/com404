@@ -24,10 +24,24 @@ if thing is thing:
 elif thing is thing:
 else:
 
+logical (bitwise) operators
+and (&) - TRUE if all TRUE
+or (|)- TRUE is one or more TRUE
+not (~)- TRUE if FALSE and vice versa
+xor (^)- TRUE if only one TRUE
+
+<< and >> are bitshifts for changing binary values
+
 while this is thing:
 
 for thing in thing:
 for thing in range(start,end,step):
+
+In loops-
+break - exits loop prematurely
+continue - starts next cycle of loop prematurely
+
+at end of loop can use else: as exit statement
 
 def name_of_function:
 
@@ -71,3 +85,24 @@ power of - 2**3 = 2*2*2 = 8
 integer(floor) division - 6//2 = 3     Normal division always produces float (6/2 = 3.0) so use this is int is needed. Always rounds down to nearest int too so 6.0//4 = 1.0 not 1.5 and -6//4 = -2
 
 float > int - Using a float in a calculation will output a float, even if ints are used too. 
+
+var = [0,1,2,3,4,5]     - array assignment
+var[0]                  - array calling an item
+var                     - would call entire contents of array (e.g. print(var) would print all items in order)
+
+len(var)                - returns length of variable, either number of chars in string or number of items in array
+
+del var[1]              - deletes item in array and moves all proceeding items down by 1 (i.e. var[2] is now var[1])
+
+var[+0]                 - calls array item counting from start to end (var[0] is first)
+var[-1]                 - calls array item counting from end to start (var[-1] is last)
+
+var.append(value)       - adds value to end of array as new item
+var.insert(loc, value)  - inserts value into array at loc, shifting all other values along by 1
+var.sort()              - sorts items low to high
+var.reverse()           - reverses order of items
+
+var1 = var2             - if array it doesn't copy value, but mem location so updating either will update both as array name is just ref, not container
+
+var1, var2, var3 = val1, val2, val3     - loads muliple vars with multiple vals in one go, useful for swapping vals (e.g. var1, var2 = var2, var1) and works with array items too
+
