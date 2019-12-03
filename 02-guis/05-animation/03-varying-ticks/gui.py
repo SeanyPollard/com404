@@ -31,8 +31,7 @@ class AnimatedGui(Tk):
         self.ultra_ball_x_change = 1
         self.ultra_ball_y_change = -1
 
-        self.num_ticks = 0
-
+        
         # add components
         self.add_poke_ball_image_label()
         self.add_great_ball_image_label()
@@ -43,15 +42,14 @@ class AnimatedGui(Tk):
         
     # the timer tick function    
     def tick(self):
-        if self.num_ticks % 2 == 0:
-            if self.poke_ball_x_pos == 0 or self.poke_ball_x_pos == 450:
-                self.poke_ball_x_change *= -1
-            if self.poke_ball_y_pos == 0 or self.poke_ball_y_pos == 450:
-                self.poke_ball_y_change *= -1
-            self.poke_ball_x_pos += self.poke_ball_x_change
-            self.poke_ball_y_pos += self.poke_ball_y_change
-            self.poke_ball_image_label.place(x=self.poke_ball_x_pos, 
-                                            y=self.poke_ball_y_pos)
+        if self.poke_ball_x_pos == 0 or self.poke_ball_x_pos == 450:
+            self.poke_ball_x_change *= -1
+        if self.poke_ball_y_pos == 0 or self.poke_ball_y_pos == 450:
+            self.poke_ball_y_change *= -1
+        self.poke_ball_x_pos += self.poke_ball_x_change
+        self.poke_ball_y_pos += self.poke_ball_y_change
+        self.poke_ball_image_label.place(x=self.poke_ball_x_pos, 
+                                        y=self.poke_ball_y_pos)
 
         if self.great_ball_x_pos == 0 or self.great_ball_x_pos == 450:
             self.great_ball_x_change *= -1
@@ -62,17 +60,15 @@ class AnimatedGui(Tk):
         self.great_ball_image_label.place(x=self.great_ball_x_pos, 
                                         y=self.great_ball_y_pos)
 
-        if self.num_ticks % 5 == 0:
-            if self.ultra_ball_x_pos == 0 or self.ultra_ball_x_pos == 450:
-                self.ultra_ball_x_change *= -1
-            if self.ultra_ball_y_pos == 0 or self.ultra_ball_y_pos == 450:
-                self.ultra_ball_y_change *= -1
-            self.ultra_ball_x_pos += self.ultra_ball_x_change
-            self.ultra_ball_y_pos += self.ultra_ball_y_change
-            self.ultra_ball_image_label.place(x=self.ultra_ball_x_pos, 
-                                            y=self.ultra_ball_y_pos)
+        if self.ultra_ball_x_pos == 0 or self.ultra_ball_x_pos == 450:
+            self.ultra_ball_x_change *= -1
+        if self.ultra_ball_y_pos == 0 or self.ultra_ball_y_pos == 450:
+            self.ultra_ball_y_change *= -1
+        self.ultra_ball_x_pos += self.ultra_ball_x_change
+        self.ultra_ball_y_pos += self.ultra_ball_y_change
+        self.ultra_ball_image_label.place(x=self.ultra_ball_x_pos, 
+                                        y=self.ultra_ball_y_pos)
 
-        self.num_ticks += 1
 
         self.after(10, self.tick)
 
